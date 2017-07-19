@@ -15,7 +15,10 @@ module.exports = {
 
     return axios.get(encodedURI)
       .then(function(response) {
-        return response.data.weather;
+        return response;
     });
+  },
+  getPicture: function(id) {
+    //Do something
   }
 }
