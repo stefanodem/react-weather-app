@@ -12,7 +12,8 @@ var config = {
   module: {
     rules: [
       { test: /\.(js)$/, use: 'babel-loader' },
-      { test: /\.css$/, use: [ 'style-loader', 'css-loader' ]}
+      { test: /\.css$/, use: [ 'style-loader', 'css-loader' ]},
+      { test: /\.svg$/, loader: 'svg-inline-loader' }
     ]
   },
   devServer: {
