@@ -20,11 +20,13 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.16.2",
+    "date-and-time": "^0.5.0",
     "react": "^15.6.1",
     "react-background-image-loader": "0.0.5",
     "react-dom": "^15.6.1",
     "react-router-dom": "^4.1.2",
-    "react-svg-loader": "^1.1.1"
+    "react-svg-loader": "^1.1.1",
+    "svg-inline-loader": "^0.8.0"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",

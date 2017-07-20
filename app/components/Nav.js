@@ -8,6 +8,7 @@ class Nav extends React.Component {
     }
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
   handleSubmit(event) {
@@ -16,16 +17,17 @@ class Nav extends React.Component {
 
   handleChange(event) {
     this.setState({location: event.target.value})
-    console.log(this.state.location)
+  }
+
+  handleClick() {
+    window.location = '/'
   }
 
   render() {
     return (
-      <div className='nav'>
+      <div className='navbar' onClick={this.handleClick}>
         Weather App
-
       </div>
-
     )
   }
 }

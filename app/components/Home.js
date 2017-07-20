@@ -1,5 +1,4 @@
 var React = require('react');
-var Forecast = require('./Forecast');
 var Redirect = require('react-router-dom').Redirect;
 
 class Home extends React.Component {
@@ -16,12 +15,10 @@ class Home extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
     this.setState({isSubmitted: true})
-    console.log(this.state.isSubmitted)
   }
 
   handleChange(event) {
     this.setState({location: event.target.value})
-    console.log(this.state.location)
   }
 
   render() {
